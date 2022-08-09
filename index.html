@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 id="title">Awesome Books</h2>
+            <ul id="nav-buttons">
+                <li><button id="list-btn" class="navbtn border-btn">List</button></li>
+                <li><button id='add-btn' class="navbtn border-btn">Add New</button></li>
+                <li><button id='contact-btn' class="navbtn">Contact</button></li>  
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <div id="date-container">
+            <p id="date"></p>
+        </div>
+        <div class="head-title">
+            <h1 id="section-title">Add a New Book</h1>
+        </div>
+        <div class="app-container">
+            <ul id="books" class="nodisplay">
+
+            </ul>
+
+            <form id="add-book" class="display-form display">
+                <input type="text" name="title" placeholder="Title" id="book-title" required>
+                <input type="text" name="author" placeholder="Author" id="book-author" required>
+                <button type="submit" id="submit">Add</button>
+            </form>
+
+            <div id="contact" class="contact nodisplay">
+                <p>Do have any questions or you just want to say 'Hello'? <br> You can reach out to us!</p>
+                <ul id="contact-list">
+                    <li class="itemscontact">My e-mail: stanleynnamani3@gmail.com</li>
+                    <li class="itemscontact">My phone number +2349064213534</li>
+                    <li class="itemscontact">My address: Ahmadu Bello University, Zaria, Kaduna. Nigeria</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" >
+        <p id="footer-text">Copyright By Stanley (StarMindz)</p>
+    </footer>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

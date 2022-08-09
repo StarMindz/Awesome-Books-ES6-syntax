@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mali', cursive, sans-serif;
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-around;
+  width: 98%;
+  border: 3px solid black;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-left: 5px;
+}
+
+#title {
+  width: 400px;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+#nav-buttons {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 30px ;
+  margin-top: 10px;
+}
+
+#section-title {
+  margin-top: 30px;
+}
+
+.border-btn {
+  border-right: 2px solid black;
+}
+
+button {
+    border: none;
+    background-repeat: no-repeat;
+}
+
+#books {
+  flex-direction: column;
+}
+
+.app-container {
+  width: 70%;
+  margin-top: 30px;
+}
+
+.lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-top: 10px;
+  background-color: antiquewhite;
+  padding: 5px;
+}
+
+.removebuttons {
+  font-size: 18px;
+  border: 2px solid black;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.navbtn {
+  padding: 10px;
+  padding-right: 30px;
+  background-color: transparent;
+  text-align: center;
+  font-size: 18px;
+}
+
+.navbtn:hover,
+.navbtn:active {
+  color: blue;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display {
+  display: flex;
+}
+
+.nodisplay {
+  display: none;
+}
+
+.contact {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 20px;
+}
+
+.display-form {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#book-title,
+#book-author {
+  width: 80%;
+  height: 20px;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#submit {
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
+}
+#contact {
+  width: 80%;
+  font-size: 20px;
+  text-align: left;
+}
+
+#footer {
+  border: 3px solid black;
+  width: 98%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  margin-left: 5px;
+}

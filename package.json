@@ -1,0 +1,20 @@
+{
+  "name": "Awesome-Books-ES6-syntax",
+  "version": "1.0.0",
+  "description": "The Awesome books rewritten with ES6 syntax",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StarMindz/Awesome-Books-ES6-syntax.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StarMindz/Awesome-Books-ES6-syntax/issues"
+  },
+  "homepage": "https://github.com/StarMindz/Awesome-Books-ES6-syntax#readme"
+}
