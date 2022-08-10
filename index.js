@@ -1,14 +1,15 @@
-import { Collection } from "./modules/collection.js";
-import { dataform, retrieveLocalStorage } from "./modules/storage.js";
-import { createNavigation } from "./modules/navigation.js";
+import { Collection } from './modules/collection.js';
+import { dataform, retrieveLocalStorage } from './modules/storage.js';
+import createNavigation from './modules/navigation.js';
 
-const bookTitle = document.getElementById("book-title");
-const authorName = document.getElementById("book-author");
-const button = document.getElementById("submit");
+const bookTitle = document.getElementById('book-title');
+const authorName = document.getElementById('book-author');
+const button = document.getElementById('submit');
 
-export const books = new Collection();
+const books = new Collection();
+export default books;
 
-//Add Event Listeners to Html Elements
+// Add Event Listeners to Html Elements
 
 button.addEventListener("click", (e) => {
   e.preventDefault();
