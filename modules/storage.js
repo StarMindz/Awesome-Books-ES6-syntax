@@ -1,11 +1,11 @@
 import books from '../index.js';
 
-export const dataform = () => {
+const dataform = () => {
   localStorage.setItem('data', JSON.stringify(books.bookArray));
 };
 
 // function for Local storage retrieval
-export const retrieveLocalStorage = () => {
+const retrieveLocalStorage = () => {
   // Local Storage Retrieval
   const mystorage = JSON.parse(localStorage.getItem('data').split(','));
   document.addEventListener('DOMContentLoaded', () => {
@@ -17,3 +17,5 @@ export const retrieveLocalStorage = () => {
     });
   });
 };
+
+export {dataform, retrieveLocalStorage};

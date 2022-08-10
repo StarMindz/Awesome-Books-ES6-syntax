@@ -1,4 +1,4 @@
-import { Collection } from './modules/collection.js';
+import Collection from './modules/collection.js';
 import { dataform, retrieveLocalStorage } from './modules/storage.js';
 import createNavigation from './modules/navigation.js';
 

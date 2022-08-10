@@ -1,7 +1,7 @@
 // Class for creating Book collection
 const list = document.querySelector('#books');
 
-export class Collection {
+class Collection {
   constructor() {
     this.bookArray = [];
     this.counter = 0;
@@ -49,3 +49,5 @@ export class Collection {
     localStorage.setItem('data', JSON.stringify(this.bookArray));
   }
 }
+
+export default Collection;
