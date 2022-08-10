@@ -1,8 +1,8 @@
 //Class for creating Book collection
-export const list = document.querySelector('#books');
+export const list = document.querySelector("#books");
 
 export class Collection {
-  constructor () {
+  constructor() {
     this.bookArray = [];
     this.counter = 0;
     this.delcounter = 0;
@@ -19,25 +19,25 @@ export class Collection {
   }
 
   display(book, author) {
-    const li = document.createElement('li');
-    const removebtn = document.createElement('button');
-    li.setAttribute('id', `${this.counter}`);
-    li.className = 'lists';
+    const li = document.createElement("li");
+    const removebtn = document.createElement("button");
+    li.setAttribute("id", `${this.counter}`);
+    li.className = "lists";
     li.textContent = `${book} by ${author}`;
     // REMOVE BUTTON
-    removebtn.className = 'removebuttons';
-    removebtn.textContent = 'Remove';
+    removebtn.className = "removebuttons";
+    removebtn.textContent = "Remove";
     li.appendChild(removebtn);
     list.appendChild(li);
   }
 
   removeBook() {
-    const buttons = document.querySelectorAll('.removebuttons');
-    buttons[buttons.length - 1].addEventListener('click', (e) => {
+    const buttons = document.querySelectorAll(".removebuttons");
+    buttons[buttons.length - 1].addEventListener("click", (e) => {
       e.preventDefault();
       const elid = e.target.parentNode.id;
       const remotion = e.target.parentNode;
-      const localcount = (elid - this.delcounter);
+      const localcount = elid - this.delcounter;
       list.removeChild(remotion);
       this.bookArray.splice(localcount, 1);
       this.delcounter += 1;
@@ -46,6 +46,6 @@ export class Collection {
   }
 
   dataLog() {
-    localStorage.setItem('data', JSON.stringify(this.bookArray));
+    localStorage.setItem("data", JSON.stringify(this.bookArray));
   }
 }
