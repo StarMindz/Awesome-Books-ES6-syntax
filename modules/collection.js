@@ -1,5 +1,5 @@
 // Class for creating Book collection
-export const list = document.querySelector('#books');
+const list = document.querySelector('#books');
 
 export class Collection {
   constructor() {
