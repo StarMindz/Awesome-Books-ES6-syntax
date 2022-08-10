@@ -5,3 +5,4 @@ testing.js
 testing.css
 hint-report/
 hint-report.json
+.stylelintrc.json
