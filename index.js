@@ -11,15 +11,15 @@ export default books;
 
 // Add Event Listeners to Html Elements
 
-button.addEventListener("click", (e) => {
+button.addEventListener('click', (e) => {
   e.preventDefault();
   const book = bookTitle.value;
   const author = authorName.value;
   books.addBook(book, author);
   books.removeBook();
   // RESET-VALUES
-  authorName.value = "";
-  bookTitle.value = "";
+  authorName.value = '';
+  bookTitle.value = '';
   // LOCAL-STORAGE
   dataform();
   // COUNTER-TRACKER
