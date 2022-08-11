@@ -1,4 +1,5 @@
 import Collection from './collection.js';
+
 const books = new Collection();
 export default books;
 

@@ -1,6 +1,5 @@
-import { dataform, retrieveLocalStorage } from './modules/storage.js';
+import books, { dataform, retrieveLocalStorage } from './modules/storage.js';
 import createNavigation from './modules/navigation.js';
-import books from './modules/storage.js';
 
 const bookTitle = document.getElementById('book-title');
 const authorName = document.getElementById('book-author');
