@@ -1,13 +1,10 @@
-import { Collection } from './modules/collection.js';
 import { dataform, retrieveLocalStorage } from './modules/storage.js';
 import createNavigation from './modules/navigation.js';
+import books from './modules/storage.js';
 
 const bookTitle = document.getElementById('book-title');
 const authorName = document.getElementById('book-author');
 const button = document.getElementById('submit');
-
-const books = new Collection();
-export default books;
 
 // Add Event Listeners to Html Elements
 

@@ -1,4 +1,6 @@
-import books from '../index.js';
+import Collection from './collection.js';
+const books = new Collection();
+export default books;
 
 const dataform = () => {
   localStorage.setItem('data', JSON.stringify(books.bookArray));
