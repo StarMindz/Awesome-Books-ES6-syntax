@@ -13,6 +13,7 @@ Awesome Books is a website that allows users to add/remove books from a list usi
 - CSS
 - JavaScript
 - A lot of Coffee
+- And Chill Electronic Music
 
 ## Live Demo (if available)
 

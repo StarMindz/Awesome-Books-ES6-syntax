@@ -1,19 +1,18 @@
-//Class for creating Book collection
-export const list = document.querySelector('#books');
+// Class for creating Book collection
+const list = document.querySelector('#books');
 
-export class Collection {
-  constructor () {
+class Collection {
+  constructor() {
     this.bookArray = [];
     this.counter = 0;
     this.delcounter = 0;
   }
 
   addBook(book, author) {
-    const bookObject = {
-      id: this.counter,
-      title: book,
-      author: author,
-    };
+    const bookObject = {};
+    bookObject.id = this.counter;
+    bookObject.title = book;
+    bookObject.author = author;
     this.bookArray.push(bookObject);
     this.display(book, author);
   }
@@ -37,7 +36,7 @@ export class Collection {
       e.preventDefault();
       const elid = e.target.parentNode.id;
       const remotion = e.target.parentNode;
-      const localcount = (elid - this.delcounter);
+      const localcount = elid - this.delcounter;
       list.removeChild(remotion);
       this.bookArray.splice(localcount, 1);
       this.delcounter += 1;
@@ -49,3 +48,5 @@ export class Collection {
     localStorage.setItem('data', JSON.stringify(this.bookArray));
   }
 }
+
+export default Collection;

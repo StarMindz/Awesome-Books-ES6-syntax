@@ -1,16 +1,12 @@
-import { Collection } from './modules/collection.js';
-import { dataform, retrieveLocalStorage } from './modules/storage.js';
-import { createNavigation } from './modules/navigation.js';
+import books, { dataform, retrieveLocalStorage } from './modules/storage.js';
+import createNavigation from './modules/navigation.js';
+import runClock from './modules/date.js';
 
 const bookTitle = document.getElementById('book-title');
 const authorName = document.getElementById('book-author');
 const button = document.getElementById('submit');
 
-
-export const books = new Collection();
-
-
-//Add Event Listeners to Html Elements
+// Add Event Listeners to Html Elements
 
 button.addEventListener('click', (e) => {
   e.preventDefault();
@@ -18,14 +14,15 @@ button.addEventListener('click', (e) => {
   const author = authorName.value;
   books.addBook(book, author);
   books.removeBook();
-    // RESET-VALUES
+  // RESET-VALUES
   authorName.value = '';
   bookTitle.value = '';
-    // LOCAL-STORAGE
+  // LOCAL-STORAGE
   dataform();
-    // COUNTER-TRACKER
+  // COUNTER-TRACKER
   books.counter += 1;
 });
 
 createNavigation();
 retrieveLocalStorage();
+runClock();

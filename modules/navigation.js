@@ -6,8 +6,7 @@ const contact = document.getElementById('contact');
 const addForm = document.getElementById('add-book');
 const list = document.querySelector('#books');
 
-
-export const createNavigation = () => {
+const createNavigation = () => {
   listBtn.addEventListener('click', () => {
     list.className = 'display';
     contact.className = 'contact nodisplay';
@@ -26,4 +25,6 @@ export const createNavigation = () => {
     addForm.className = 'display-form display';
     texttest.innerText = 'Add a new book';
   });
-}
+};
+
+export default createNavigation;
