@@ -10,9 +10,9 @@ class Collection {
 
   addBook(book, author) {
     const bookObject = {};
-    bookObject.id = this.counter,
-    bookObject.title = book,
-    bookObject.author = author,
+    bookObject.id = this.counter;
+    bookObject.title = book;
+    bookObject.author = author;
     this.bookArray.push(bookObject);
     this.display(book, author);
   }
