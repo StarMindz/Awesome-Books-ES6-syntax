@@ -1,4 +1,4 @@
-import books from '../index';
+import books from '../index.js';
 
 const dataform = () => {
   localStorage.setItem('data', JSON.stringify(books.bookArray));
