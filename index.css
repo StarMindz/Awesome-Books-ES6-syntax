@@ -147,3 +147,11 @@ button {
   margin-top: 30px;
   margin-left: 5px;
 }
+
+#date-container {
+  margin-top: 20px;
+}
+
+#date {
+  font-size: 18px;
+}

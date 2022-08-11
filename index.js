@@ -1,5 +1,6 @@
 import books, { dataform, retrieveLocalStorage } from './modules/storage.js';
 import createNavigation from './modules/navigation.js';
+import runClock from './modules/date.js';
 
 const bookTitle = document.getElementById('book-title');
 const authorName = document.getElementById('book-author');
@@ -24,3 +25,4 @@ button.addEventListener('click', (e) => {
 
 createNavigation();
 retrieveLocalStorage();
+runClock();
